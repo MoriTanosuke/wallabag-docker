@@ -28,4 +28,4 @@ RUN cd /var/www/wallabag && \
     php bin/console wallabag:install --env=prod && \
     chown -R www-data:www-data /var/www/wallabag && \
     rmdir /var/www/html && \
-    ln -s /var/www/html /var/www/wallabag/web
+    ln -s /var/www/wallabag/web /var/www/html
