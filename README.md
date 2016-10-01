@@ -9,7 +9,9 @@ couldn't find a way to remove the zombie process created by the [s6
 supervisor][3].
 
 This Dockerfile does not use any supervisor. It's based on [php:apache][2]
-and has nothing else running.
+and has nothing else running. It's quite a bit larger than the official 
+image, but I'm happy to pay this price if it runs stable and does not
+bring down all my containers on a host.
 
 [0]: https://www.wallabag.org
 [1]: http://doc.wallabag.org/en/master/user/installation.html#installation-with-docker
