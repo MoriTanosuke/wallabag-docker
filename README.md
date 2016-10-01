@@ -1,7 +1,7 @@
 wallabag-dockerfile
 ===================
 
-Simple dockerfile to run [wallabag][0]
+[![](https://images.microbadger.com/badges/image/moritanosuke/wallabag-docker.svg)](https://microbadger.com/images/moritanosuke/wallabag-docker)
 
 I created this Dockerfile because I had the [official image][1] crash 
 on me a couple times and I had to restart my docker server because I
