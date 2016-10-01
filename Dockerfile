@@ -27,5 +27,5 @@ RUN cd /var/www/wallabag && \
     /usr/local/bin/composer.phar install --no-dev -o --prefer-dist && \
     php bin/console wallabag:install --env=prod && \
     chown -R www-data:www-data /var/www/wallabag && \
-    rmmdir /var/www/html && \
+    rmdir /var/www/html && \
     ln -s /var/www/html /var/www/wallabag/web
