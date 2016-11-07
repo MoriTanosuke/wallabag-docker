@@ -1,0 +1,13 @@
+wallabag:
+#  image: wallabag/wallabag
+  build: .
+  ports:
+  - 8111:80
+  volumes:
+  - ./data:/var/www/wallabag/data
+#  - ./config.yml:/var/www/wallabag/app/config/config.yml
+#  - ./parameters.yml:/var/www/wallabag/app/config/parameters.yml
+#  - ./htaccess:/var/www/wallabag/web/.htaccess
+  environment:
+  - SYMFONY_ENV=prod
+
