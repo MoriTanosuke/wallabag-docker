@@ -20,7 +20,7 @@ I added an example configuration for [docker-compose][4] in file *docker-compose
 
     docker-compose up
 
-After that open http://localhost:8111/ and you should see the login.
+After that open http://localhost:8111/ and you should see the login. Default login/password is *wallabag/wallabag*. Unfortunately the first login fails and you'll end up on an error page. If you open http://localhost:8111 again you should see the default articles in your running wallabag instance though.
 
 [0]: https://www.wallabag.org
 [1]: http://doc.wallabag.org/en/master/user/installation.html#installation-with-docker
