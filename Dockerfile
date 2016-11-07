@@ -1,7 +1,7 @@
 FROM php:apache
 MAINTAINER carsten@kopis.de
 
-ENV WALLABAG_VERSION=2.0.8 \
+ENV WALLABAG_VERSION=2.1.3 \
     SYMFONY_ENV=prod
 
 # install PHP extensions and other dependencies
@@ -14,7 +14,8 @@ RUN apt-get update && apt-get install -y \
         libpng12-dev \
         && docker-php-ext-install -j$(nproc) iconv mcrypt \
         && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
-        && docker-php-ext-install -j$(nproc) gd
+        && docker-php-ext-install -j$(nproc) gd \
+        && docker-php-ext-install bcmath
 # install composer
 RUN cd /usr/local/bin && curl -s http://getcomposer.org/installer | php
 # download wallabag
