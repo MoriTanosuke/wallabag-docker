@@ -1,7 +1,7 @@
 FROM php:apache
 MAINTAINER carsten@kopis.de
 
-ENV WALLABAG_VERSION=2.1.3 \
+ENV WALLABAG_VERSION=2.1.5 \
     SYMFONY_ENV=prod
 
 # install PHP extensions and other dependencies
