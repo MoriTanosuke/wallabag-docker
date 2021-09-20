@@ -27,4 +27,3 @@ After that open http://localhost:8111/ and you should see the login. Default log
 [2]: https://hub.docker.com/_/php/
 [3]: http://www.skarnet.org/software/s6/
 [4]: https://www.docker.com/products/docker-compose
-
